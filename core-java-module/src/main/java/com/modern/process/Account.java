@@ -1,7 +1,7 @@
 package com.modern.process;
 
 public class Account {
-    static int counter;
+    //static int counter;
     final String constantAccountNumberPart = "55555";
     //private int additiveAccountNumberPart ;
     private String accountNumber;
