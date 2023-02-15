@@ -4,11 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="298e1363-bb95-4d1d-b71c-0c0430529ce1" name="Changes" comment="add sources to repository" />
+    <list default="true" id="298e1363-bb95-4d1d-b71c-0c0430529ce1" name="Changes" comment="add sources to repository">
+      <change afterPath="$PROJECT_DIR$/core-java-module/src/main/java/com/modern/process/LoanAccount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core-java-module/src/main/java/com/modern/process/LoanStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core-java-module/src/main/java/com/modern/process/LoanType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core-java-module/src/main/java/com/modern/process/SavingAccount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core-java-module/src/main/java/com/modern/process/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/core-java-module/src/main/java/com/modern/process/Account.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core-java-module/src/main/java/com/modern/process/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/core-java-module/src/main/java/com/modern/process/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core-java-module/src/main/java/com/modern/process/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/core-java-module/src/main/java/com/modern/process/Main.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Enum" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -77,7 +94,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676114024122</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="add sources to repository">
+      <created>1676114158121</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1676114158121</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

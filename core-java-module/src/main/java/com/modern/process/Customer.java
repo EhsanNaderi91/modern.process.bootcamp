@@ -1,14 +1,14 @@
 package com.modern.process;
 
 public class Customer {
-    Account eachUser ;
-    String name;
-    String surname;
-    String age;
-    String phoneNumber;
+    public Account client;
+    private String name;
+    private String surname;
+    private String age;
+    private String phoneNumber;
 
-    public Customer(Account eachUser, String name, String surname, String age, String phoneNumber) {
-        this.eachUser = eachUser;
+    public Customer(Account client, String name, String surname, String age, String phoneNumber) {
+        this.client = client;
         this.name = name;
         this.surname = surname;
         this.age = age;
@@ -46,13 +46,20 @@ public class Customer {
     public void setPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
     }
-    public void displayAccountNumber() {
-        System.out.println(eachUser.getAccountNumber());
+
+    public void showAccountNumber() {
+        System.out.println(client.getAccountNumber());
     }
-    public void chargeBalance(int charge){
-        eachUser.changeBalance(charge);
+
+    public void showBalance() {
+        System.out.println(client.getBalance());
     }
-    public void showBalance(){
-        System.out.println(eachUser.getBalance());
+
+    public void deposit(int charge) {
+        client.deposit(charge);
+    }
+
+    public void withdraw(int disCharge) {
+        client.withdraw(disCharge);
     }
 }
