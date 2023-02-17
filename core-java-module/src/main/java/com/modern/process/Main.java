@@ -22,5 +22,6 @@ public class Main {
         Customer newCustomerAccount = new Customer(newAccountObj, name, surname, age, phoneNumber);
         Customer newCustomerSaving = new Customer(newSavingAccountObj, name, surname, age, phoneNumber);
         Customer newCustomerLoan = new Customer(newLoanAccountObj, name, surname, age, phoneNumber);
+
     }
 }

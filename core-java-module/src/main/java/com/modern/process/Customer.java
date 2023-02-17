@@ -2,6 +2,8 @@ package com.modern.process;
 
 public class Customer {
     public Account client;
+    private LoanType loanType;
+    private LoanStatus loanStatus;
     private String name;
     private String surname;
     private String age;
@@ -47,12 +49,12 @@ public class Customer {
         this.phoneNumber = phoneNumber;
     }
 
-    public void showAccountNumber() {
-        System.out.println(client.getAccountNumber());
+    public String AccountNumber() {
+        return client.getAccountNumber();
     }
 
-    public void showBalance() {
-        System.out.println(client.getBalance());
+    public int getBalance() {
+        return client.getBalance();
     }
 
     public void deposit(int charge) {
@@ -61,5 +63,55 @@ public class Customer {
 
     public void withdraw(int disCharge) {
         client.withdraw(disCharge);
+    }
+
+    public int getSavingAccountInterestRate() {
+        if (client instanceof SavingAccount) {
+            return ((SavingAccount) client).interestRate;
+        } else {
+            System.out.println("There Is Not A Saving Account");
+            return 0;
+        }
+    }
+    public void setSavingAccountInterestRate(int interestRate) {
+        if (client instanceof SavingAccount) {
+            ((SavingAccount) client).interestRate = interestRate;
+        } else {
+            System.out.println("There Is Not A Saving Account");
+        }
+    }
+    public LoanType getLoanType() {
+        if (client instanceof LoanAccount) {
+            return ((LoanAccount) client).getLoanType();
+        }
+        else {
+            System.out.println("There Is Not A Loan Account");
+            return null;
+        }
+    }
+    public void setLoanType(LoanType loanType) {
+        if (client instanceof LoanAccount) {
+            ((LoanAccount) client).setLoanType(loanType);
+        }
+        else {
+            System.out.println("There Is Not A Loan Account");
+        }
+    }
+    public LoanStatus getLoanStatus() {
+        if (client instanceof LoanAccount) {
+            return ((LoanAccount) client).getLoanStatus();
+        }
+        else {
+            System.out.println("There Is Not A Loan Account");
+            return null;
+        }
+    }
+    public void setLoanStatus(LoanStatus loanStatus) {
+        if (client instanceof LoanAccount) {
+            ((LoanAccount) client).setLoanStatus(loanStatus);
+        }
+        else {
+            System.out.println("There Is Not A Loan Account");
+        }
     }
 }
